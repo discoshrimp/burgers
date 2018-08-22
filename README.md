@@ -1,2 +1,2 @@
 # burgers
-do you wanna eata-da-burger!
+do you wanna eat-da-burger!
