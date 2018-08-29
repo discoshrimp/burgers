@@ -1,6 +1,7 @@
-const orm = require("../config/orm.js");
 
-
+//this is my front end javascript
+//listening to my views directory
+//this gets exported to handlebars
 
 
 $.get("/api/all", function(data){
@@ -39,4 +40,4 @@ $("#submit").on("click", function(event){
 	})
 
 
-module.export
+
