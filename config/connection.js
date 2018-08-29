@@ -1,16 +1,16 @@
-var db = require("mysql");
+var mysql = require("mysql");
 
-
-
-var connect = db.createConnection({
+var connection = mysql.createConnection({
 	host: "localhost",
 	user: "guest",
-	password: "password"
+	password: "password",
+	port: 3306,
+	database: "burgers",
 });
 
-var connection = connect.connect(function (err) {
+connection.connect(function (err) {
 	if (err) throw err;
-	console.log("||database online||");
+	console.log("||database online|| ID: " + connection.threadId);
 });
 
 module.export = connection;
